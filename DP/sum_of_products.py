@@ -17,7 +17,7 @@ def solve_DP(a):
     for i in range(2, n+1):
         T[i] = max(U(a, T, i-1), T[i-1])
 
-    #print('DBG:T', T)
+    print('DBG:T', T)
     return T[i]
 
 def main():
